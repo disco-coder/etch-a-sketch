@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+#container {
+  margin: auto;
+  width: max-content;
+}
+
+.square {
+  border: 1px solid black;
+  border-collapse: collapse;
+  flex: 1 1;
+  height: 30px;
+}
+
+.row {
+  width: 480px;
+  display: flex;
+}
