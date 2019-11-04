@@ -10,6 +10,11 @@ body {
   width: max-content;
 }
 
+.button {
+  width: max-content;
+  margin: 0 auto;
+}
+
 .square {
   border: 1px solid black;
   border-collapse: collapse;

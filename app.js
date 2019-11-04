@@ -1,6 +1,6 @@
 const container = document.querySelector("#container");
 
-
+// Create grid
 for (let i = 0; i < 16; i++) {
     let row = document.createElement("div");
     row.classList.add("row");
@@ -12,3 +12,19 @@ for (let i = 0; i < 16; i++) {
         row.appendChild(square);
     }
 }
+
+const squares = document.querySelectorAll(".square");
+
+// Make squares black on hover
+squares.forEach((square) => {
+    square.addEventListener("mouseenter", (e) => {
+        square.style.backgroundColor = "black";
+    });
+});
+
+const button = document.querySelector("button");
+button.addEventListener("click", (e) => {
+    squares.forEach((square) => {
+        square.style.backgroundColor = "white";
+    });
+});
