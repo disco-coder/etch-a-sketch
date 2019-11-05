@@ -4,4 +4,4 @@ This is the *Etch-A-Sketch* project for [The Odin Project](https://www.theodinpr
 
 ## Summary
 
-This project was event listener heavy, I think I've got a hang of it a bit. Also refactored a lot of my repetitive spaghetti code into functions, I think the code looks alright now.
+This project was event listener heavy, so I've learned a small bit about event listeners. Also refactored a lot of my repetitive spaghetti code into functions, I think the code looks alright now.
