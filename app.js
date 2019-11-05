@@ -1,22 +1,19 @@
 // Div containing the squares
 const container = document.querySelector("#container");
 
-// Create grid
 createGrid(16);
-
-// Make squares black on hover
-colorGrid("black");
+colorSquares("black");
 
 // Choose your color button
 const chooseColorButton = document.querySelector("#chooseColorButton")
 chooseColorButton.addEventListener("click", () => {
     let color = prompt("Choose your color:");
-    colorGrid(color);
+    colorSquares(color);
 })
 
-// Random colors
+// Random colors button
 const randomColorButton = document.querySelector("#randomColorButton")
-randomColorButton.addEventListener("click", () => randomColorGrid())
+randomColorButton.addEventListener("click", () => randomColorsSquares())
 
 // Clear grid button
 const clearButton = document.querySelector("#clearButton");
@@ -24,7 +21,7 @@ clearButton.addEventListener("click", () => clearGrid());
 
 // Resize grid button
 const resizeButton = document.querySelector("#resizeButton");
-resizeButton.addEventListener("click", (e) => {
+resizeButton.addEventListener("click", () => {
     
     // Remove old grid
     while (container.firstChild) {
@@ -37,7 +34,7 @@ resizeButton.addEventListener("click", (e) => {
     } while (isNaN(gridSize));
 
     createGrid(gridSize);
-    colorGrid("black");
+    colorSquares("black");
 })
 
 function clearGrid() {
@@ -47,19 +44,19 @@ function clearGrid() {
     });
 }
 
-function colorGrid(color) {
+function colorSquares(color) {
     let squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
-        square.addEventListener("mouseenter", (e) => {
+        square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = color;
         });
     });
 }
 
-function randomColorGrid() {
+function randomColorsSquares() {
     let squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
-        square.addEventListener("mouseenter", (e) => {
+        square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = getRandomColor();
         });
     });
