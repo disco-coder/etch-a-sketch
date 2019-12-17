@@ -1,7 +1,11 @@
 # Etch-A-Sketch
 
-This is the *Etch-A-Sketch* project for [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project).
+A simple etch-a-sketch canvas.
 
-## Summary
+## Getting Started
 
-This project was event listener heavy, so I've learned a small bit about event listeners. Also refactored a lot of my repetitive spaghetti code into functions, I think the code looks alright now.
+Click on the link in the repo's description to etch-a-sketch.
+
+## Authors
+
+[disco-trooper](https://github.com/disco-trooper)
